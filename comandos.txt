@@ -1,3 +1,5 @@
+snmptrap -v1 -c public localhost TRAP-TEST-MIB::demotraps "" 2 0 "" IF-MIB::ifIndex i 1
+
 sudo service snmptrapd stop
 sudo systemctl stop snmptrapd.socket
 sudo snmptrapd -f -Lo -c /etc/snmp/snmptrapd.conf
