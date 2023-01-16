@@ -1,0 +1,8 @@
+sudo service snmptrapd stop
+sudo systemctl stop snmptrapd.socket
+sudo snmptrapd -f -Lo -c /etc/snmp/snmptrapd.conf
+
+--------------------
+-----------6------------
+TRAP ESPECIFICO
+
